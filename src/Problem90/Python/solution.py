@@ -1,4 +1,6 @@
 def is_shifted(str1, str2):
+    if str1 == str2:
+        return True
     if (not str1 or not str2) or (not len(str1) == len(str2)):
         return False
     temp = str1 + str1 # concat string str1 twice
